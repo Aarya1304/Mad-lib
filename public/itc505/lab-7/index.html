@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mad Lib - Jungle Adventure</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🌴 Jungle Adventure Mad Lib 🌿</h1>
+      <p>Fill in the blanks and create your own jungle story!</p>
+    </header>
+    <form action="/ITC505/lab-7" method="POST">
+      <label for="noun">🐒 Noun:</label>
+      <input type="text" id="noun" name="noun" required placeholder="e.g., monkey"><br><br>
+
+      <label for="adjective">🦜 Adjective:</label>
+      <input type="text" id="adjective" name="adjective" required placeholder="e.g., colorful"><br><br>
+
+      <label for="pluralNoun">🌳 Plural Noun:</label>
+      <input type="text" id="pluralNoun" name="pluralNoun" required placeholder="e.g., trees"><br><br>
+
+      <label for="verb">🐾 Verb:</label>
+      <input type="text" id="verb" name="verb" required placeholder="e.g., swing"><br><br>
+
+      <label for="adverb">🦁 Adverb:</label>
+      <input type="text" id="adverb" name="adverb" required placeholder="e.g., bravely"><br><br>
+
+      <button type="submit" class="submit-btn">🌟 Create Story</button>
+    </form>
+  </div>
+
+  <footer>
+    <p>Last updated: <span id="lastModified"></span></p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

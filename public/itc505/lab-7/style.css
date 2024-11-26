@@ -1,0 +1,101 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4 url('https://www.toptal.com/designers/subtlepatterns/uploads/paper-fibers.png') repeat;
+    color: #333;
+  }
+  
+  /* Container */
+  .container {
+    max-width: 600px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Header */
+  header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  header h1 {
+    font-size: 2em;
+    color: #2e8b57;
+  }
+  
+  header p {
+    font-size: 1.1em;
+    color: #555;
+  }
+  
+  /* Form Labels */
+  form label {
+    display: block;
+    font-size: 1.2em;
+    margin-bottom: 5px;
+    color: #2e8b57;
+  }
+  
+  /* Inputs */
+  form input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    margin-bottom: 15px;
+    border: 2px solid #2e8b57;
+    border-radius: 5px;
+    background: #f9f9f9;
+    color: #333;
+  }
+  
+  /* Button */
+  .submit-btn {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.2em;
+    background: #2e8b57;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .submit-btn:hover {
+    background: #1e6f42;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #777;
+  }
+
+  /* Button Hover Animation */
+.submit-btn {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .submit-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 300%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0));
+    transition: left 0.3s ease-in-out;
+  }
+  
+  .submit-btn:hover::before {
+    left: 100%;
+  }
+  
