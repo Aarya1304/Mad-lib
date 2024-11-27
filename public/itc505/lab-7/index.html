@@ -30,11 +30,35 @@
 
       <button type="submit" class="submit-btn">🌟 Create Story</button>
     </form>
+
+    <section class="addendum">
+      <h2>💡 Addendum: Potential Problems and Solutions</h2>
+      <ol>
+        <li><strong>Problem:</strong> Server returns a "404 Not Found" error for the form submission.<br>
+          <strong>Cause:</strong> The form's <code>action</code> attribute does not match the route in the server code.<br>
+          <strong>Solution:</strong> Ensure the action matches the route in <code>server.js</code>, e.g., <code>/ITC505/lab-7</code>.
+        </li>
+        <li><strong>Problem:</strong> CSS and JavaScript files are not loading after deployment.<br>
+          <strong>Cause:</strong> Static files are not being served correctly by Express.<br>
+          <strong>Solution:</strong> Make sure the <code>public</code> directory is configured in the server using <code>express.static</code>.
+        </li>
+        <li><strong>Problem:</strong> Form fields keep resetting when the page is reloaded.<br>
+          <strong>Cause:</strong> No persistence is implemented to save form data.<br>
+          <strong>Solution:</strong> Implement a session or database to retain inputs if required for the assignment.
+        </li>
+        <li><strong>Problem:</strong> Deployment to Render fails due to a missing <code>package.json</code> or incorrect start command.<br>
+          <strong>Solution:</strong> Ensure your repository contains a <code>package.json</code> with a valid <code>start</code> script (e.g., <code>"start": "node server.js"</code>).
+        </li>
+      </ol>
+    </section>
   </div>
 
   <footer>
     <p>Last updated: <span id="lastModified"></span></p>
   </footer>
-  <script src="script.js"></script>
+  <script>
+    var x = document.lastModified;
+    document.getElementById('lastModified').textContent = x;
+  </script>
 </body>
 </html>
